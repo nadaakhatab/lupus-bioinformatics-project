@@ -1,0 +1,33 @@
+# Virtual Environment
+bioinfo_env/
+.venv/
+env/
+venv/
+
+# FASTQ / sequencing data (large files)
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz
+*.gz
+*.sra
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter / Colab
+.ipynb_checkpoints/
+
+# OS / system files
+.DS_Store
+Thumbs.db
+
+# Logs / temp files
+*.log
+*.tmp
+
+# VS Code 
+.vscode/
