@@ -1,4 +1,4 @@
-# Lupus RNA-seq Analysis Pipeline
+# RNA-seq Data Science Pipeline for Lupus Autoimmune Disease Classification
 ### Detecting Disease-Specific DNA Patterns in Systemic Lupus Erythematosus Using K-mer Profiling and Machine Learning
 
 ---
