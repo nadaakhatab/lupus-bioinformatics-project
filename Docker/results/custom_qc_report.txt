@@ -1,0 +1,204 @@
+============================================================
+     CUSTOM QC REPORT — Lupus FASTQ Project
+============================================================
+
+File            : SRR5413733.fastq
+Total Reads     : 76618
+Avg Read Length : 101.0 bp
+GC Content      : 43.86 %
+Q20             : 83.57 %
+Q30             : 80.74 %
+Per-base Quality (first 10 positions):
+  Base   1: 34.71
+  Base   2: 34.74
+  Base   3: 34.75
+  Base   4: 34.77
+  Base   5: 34.78
+  Base   6: 39.68
+  Base   7: 39.69
+  Base   8: 39.7
+  Base   9: 39.71
+  Base  10: 39.71
+
+------------------------------------------------------------
+
+File            : SRR5413734.fastq
+Total Reads     : 98008
+Avg Read Length : 101.0 bp
+GC Content      : 46.24 %
+Q20             : 86.93 %
+Q30             : 84.37 %
+Per-base Quality (first 10 positions):
+  Base   1: 34.7
+  Base   2: 34.73
+  Base   3: 34.75
+  Base   4: 34.77
+  Base   5: 34.78
+  Base   6: 39.69
+  Base   7: 39.69
+  Base   8: 39.69
+  Base   9: 39.71
+  Base  10: 39.7
+
+------------------------------------------------------------
+
+File            : SRR5413735.fastq
+Total Reads     : 55261
+Avg Read Length : 101.0 bp
+GC Content      : 43.05 %
+Q20             : 78.7 %
+Q30             : 74.77 %
+Per-base Quality (first 10 positions):
+  Base   1: 34.66
+  Base   2: 34.69
+  Base   3: 34.7
+  Base   4: 34.73
+  Base   5: 34.74
+  Base   6: 39.63
+  Base   7: 39.64
+  Base   8: 39.66
+  Base   9: 39.69
+  Base  10: 39.67
+
+------------------------------------------------------------
+
+File            : SRR5413736.fastq
+Total Reads     : 39306
+Avg Read Length : 101.0 bp
+GC Content      : 44.74 %
+Q20             : 77.05 %
+Q30             : 73.15 %
+Per-base Quality (first 10 positions):
+  Base   1: 34.58
+  Base   2: 34.61
+  Base   3: 34.62
+  Base   4: 34.67
+  Base   5: 34.68
+  Base   6: 39.56
+  Base   7: 39.54
+  Base   8: 39.56
+  Base   9: 39.61
+  Base  10: 39.58
+
+------------------------------------------------------------
+
+File            : SRR5413737.fastq
+Total Reads     : 78654
+Avg Read Length : 101.0 bp
+GC Content      : 44.68 %
+Q20             : 81.22 %
+Q30             : 77.62 %
+Per-base Quality (first 10 positions):
+  Base   1: 34.64
+  Base   2: 34.66
+  Base   3: 34.69
+  Base   4: 34.72
+  Base   5: 34.73
+  Base   6: 39.62
+  Base   7: 39.62
+  Base   8: 39.64
+  Base   9: 39.66
+  Base  10: 39.62
+
+------------------------------------------------------------
+
+File            : SRR5413805.fastq
+Total Reads     : 1720977
+Avg Read Length : 101.0 bp
+GC Content      : 50.99 %
+Q20             : 93.92 %
+Q30             : 90.77 %
+Per-base Quality (first 10 positions):
+  Base   1: 33.73
+  Base   2: 33.73
+  Base   3: 33.73
+  Base   4: 33.82
+  Base   5: 33.78
+  Base   6: 37.93
+  Base   7: 37.81
+  Base   8: 37.77
+  Base   9: 37.79
+  Base  10: 37.71
+
+------------------------------------------------------------
+
+File            : SRR5413806.fastq
+Total Reads     : 1764863
+Avg Read Length : 101.0 bp
+GC Content      : 50.98 %
+Q20             : 94.04 %
+Q30             : 90.91 %
+Per-base Quality (first 10 positions):
+  Base   1: 33.72
+  Base   2: 33.73
+  Base   3: 33.72
+  Base   4: 33.82
+  Base   5: 33.78
+  Base   6: 37.93
+  Base   7: 37.82
+  Base   8: 37.79
+  Base   9: 37.79
+  Base  10: 37.69
+
+------------------------------------------------------------
+
+File            : SRR5413807.fastq
+Total Reads     : 1744750
+Avg Read Length : 101.0 bp
+GC Content      : 51.03 %
+Q20             : 94.12 %
+Q30             : 90.89 %
+Per-base Quality (first 10 positions):
+  Base   1: 33.69
+  Base   2: 33.69
+  Base   3: 33.68
+  Base   4: 33.79
+  Base   5: 33.75
+  Base   6: 37.87
+  Base   7: 37.75
+  Base   8: 37.72
+  Base   9: 37.73
+  Base  10: 37.65
+
+------------------------------------------------------------
+
+File            : SRR5413808.fastq
+Total Reads     : 1639225
+Avg Read Length : 101.0 bp
+GC Content      : 49.98 %
+Q20             : 94.29 %
+Q30             : 91.29 %
+Per-base Quality (first 10 positions):
+  Base   1: 33.79
+  Base   2: 33.79
+  Base   3: 33.79
+  Base   4: 33.88
+  Base   5: 33.84
+  Base   6: 38.04
+  Base   7: 37.92
+  Base   8: 37.89
+  Base   9: 37.9
+  Base  10: 37.8
+
+------------------------------------------------------------
+
+File            : SRR5413809.fastq
+Total Reads     : 1546023
+Avg Read Length : 101.0 bp
+GC Content      : 51.04 %
+Q20             : 94.09 %
+Q30             : 91.02 %
+Per-base Quality (first 10 positions):
+  Base   1: 33.76
+  Base   2: 33.76
+  Base   3: 33.75
+  Base   4: 33.85
+  Base   5: 33.81
+  Base   6: 37.98
+  Base   7: 37.87
+  Base   8: 37.84
+  Base   9: 37.84
+  Base  10: 37.77
+
+------------------------------------------------------------
+
