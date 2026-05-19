@@ -1,0 +1,95 @@
+version: "3.9"
+
+services:
+
+  # Main pipeline service 
+  pipeline:
+    # Build from the local Dockerfile
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    # Name the resulting image for easy reference
+    image: lupus-bioinfo:1.0
+
+    # Name the running container
+    container_name: lupus_pipeline
+
+    # Keep container running for interactive use;
+    # remove this for one-shot script execution
+    stdin_open: true
+    tty: true
+
+    #Environment variables
+    environment:
+      - PYTHONPATH=/workspace/src:/workspace
+      - BASE=/workspace
+      - HEALTHY_DIR=/workspace/data/healthy
+      - DISEASE_DIR=/workspace/data/disease
+      - RESULTS_DIR=/workspace/results
+      - TRIMMED_DIR=/workspace/trimmed
+
+    volumes:
+      # Python scripts — live-edit on host, run in container
+      - ./src:/workspace/src
+
+      # Raw FASTQ data (healthy + disease subdirectories)
+      - ./data:/workspace/data
+
+      # Pipeline outputs persist on host after the container exits
+      - ./results:/workspace/results
+
+      # Trimmed FASTQ files (fastp output)
+      - ./trimmed:/workspace/trimmed
+
+      # QC reports
+      - ./reports:/workspace/reports
+
+      # SRA Toolkit cache — avoids re-downloading between sessions
+      - sra_cache:/workspace/data/.sra_cache
+
+    # ── Working directory inside the container ───────────────
+    working_dir: /workspace
+
+    # ── Default command ──────────────────────────────────────
+    command: /bin/bash
+
+  notebook:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: lupus-bioinfo:1.0
+    container_name: lupus_notebook
+
+    environment:
+      - PYTHONPATH=/workspace/src:/workspace
+      - BASE=/workspace
+
+    volumes:
+      - ./src:/workspace/src
+      - ./data:/workspace/data
+      - ./results:/workspace/results
+      - ./trimmed:/workspace/trimmed
+      - ./reports:/workspace/reports
+      - sra_cache:/workspace/data/.sra_cache
+      # Mount notebooks directory from host
+      - ./notebooks:/workspace/notebooks
+
+    working_dir: /workspace
+
+    ports:
+      - "8888:8888"
+
+    command: >
+      jupyter notebook
+        --ip=0.0.0.0
+        --port=8888
+        --no-browser
+        --allow-root
+        --NotebookApp.token=''
+        --NotebookApp.password=''
+        --notebook-dir=/workspace/notebooks
+
+volumes:
+  sra_cache:
+    driver: local

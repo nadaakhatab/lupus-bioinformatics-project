@@ -31,3 +31,13 @@ Thumbs.db
 
 # VS Code 
 .vscode/
+
+# Big pipeline outputs
+Docker/data/
+Docker/fastqc_raw/
+Docker/fastqc_trimmed/
+Docker/fastp/
+Docker/reports/
+Docker/results/
+
+*.gz
